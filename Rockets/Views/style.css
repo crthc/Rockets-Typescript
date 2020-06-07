@@ -1,0 +1,38 @@
+.btn-lg {
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #EB3349 100%, #F45C43 50%, #EB3349 0%);
+    background-size: 100% 100%;
+
+}
+    
+.btn-lg:hover { 
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43 50%, #EB3349 100%);
+    
+}
+
+.shine {
+    position: relative;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .shine:after {
+    content: "";
+    background: #F45C43;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .shine:active:after {
+    opacity: 2;
+    transition: 0s
+  }

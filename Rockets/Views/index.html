@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/emoji/48/000000/rocket-emji.png">
+    <title>Rockets</title>
+</head>
+<body class="bg-info text-white">
+
+    <div class="card border-0 w-50 mx-auto mt-4 bg-info">
+        <div class="card-body">
+            <div class="card-text">
+                <div class="row">
+                    <div class="col-md-10">
+                         <h1 class="display-4">Create rockets <img class="imgrocket pl-1" src="https://img.icons8.com/emoji/48/000000/rocket-emji.png"/></h1> 
+                    </div>
+                </div>
+                <form class="formRocket mt-5 pt-3" id="formRocket">
+                    <div class="row justify-content-around">
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='rocket1' class= "btn btn-lg btn-block text-white shadow-none"><strong>Create Rocket 1</strong></button>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='rocket2' class= "btn btn-lg btn-block text-white shadow-none"><strong>Create Rocket 2</strong></button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='accelerateRocket1' class= "btn btn-lg btn-block text-white shadow-none shine"><strong>Accelerate Rocket 1</strong></button>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='accelerateRocket2' class= "btn btn-lg btn-block text-white shadow-none shine"><strong>Accelerate Rocket 2</strong></button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='breakRocket1' class= "btn btn-lg btn-block text-white shadow-none shine"><strong>Break Rocket 1</strong></button>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='breakRocket2' class= "btn btn-lg btn-block text-white shadow-none shine"><strong>Break Rocket 2</strong></button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='printRocket1' class= "btn btn-lg btn-block text-white shadow-none"><strong>Info Rocket 1</strong></button>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='printRocket2' class= "btn btn-lg btn-block text-white shadow-none"><strong>Info Rocket 2</strong></button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pt-3">
+                        <div class="form-group col-md-5">
+                            <button type= "button" id='printAll' class= "btn btn-lg btn-block text-white shadow-none"><strong>Info all rockets</strong></button>
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="form-group col-md-6" id="showRocket1">
+                        </div>
+                        <div class="form-group col-md-6" id="showRocket2">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+<script src="../models/rocket.js"></script>
+<script src="../models/thruster.js"></script>
+<script src="../controllers/controller.js"></script>     
+</body>
+</html>
